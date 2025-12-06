@@ -185,6 +185,16 @@
   </header>
 
   <main>
+
+    <!-- 🔗 Explicit links so GitHub Pages publishes these files -->
+    <div class="block">
+      <h2>File Links (for GitHub Pages)</h2>
+      <ul>
+        <li><a href="iframe.html">iframe.html</a></li>
+        <li><a href="states.json">states.json</a></li>
+      </ul>
+    </div>
+
     <div class="block">
       <h1>Application Form</h1>
       <p>This demo uses fetch, iframe, cookies, and localStorage.</p>
@@ -246,7 +256,6 @@
   </footer>
 
   <script>
-    /* Utilities */
     function setCookie(name, value, hours) {
       const d = new Date();
       d.setTime(d.getTime() + (hours * 60 * 60 * 1000));
@@ -308,7 +317,6 @@
       const saveBtn = document.getElementById("saveBtn");
       const resetBtn = document.getElementById("resetBtn");
       const welcomeText = document.getElementById("welcomeText");
-      const userControls = document.getElementById("userControls");
 
       salaryEl.value = 75000;
       salaryValue.textContent = "75000";
